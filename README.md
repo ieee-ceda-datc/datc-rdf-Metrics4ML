@@ -18,6 +18,8 @@ In addition, each experimental folder consists of the following contents.
 The following is a description of the contents that each experimental folder contains.
 ### all_config_files.tgz
 The following files for all runs used in the experiments.
+The user can reproduce the experiment with the following files and the information described in metrics.json.
+
 - Makefile
   - OpenROAD Makefile to replace original [Makefile](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts/blob/master/flow/Makefile).
 
