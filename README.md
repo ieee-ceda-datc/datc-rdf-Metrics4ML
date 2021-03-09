@@ -14,7 +14,7 @@ In addition, each experimental folder consists of the following contents.
 - metrics.json
 - README.md
 
-Below is a detailed description of each content.
+The following is a description of the contents that each experimental folder contains.
 ### all_config_files.tgz
 The following files for all runs used in the experiments.
 - Makefile
