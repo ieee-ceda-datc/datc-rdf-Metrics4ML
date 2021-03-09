@@ -7,9 +7,9 @@ ibex_core
 
 ## Design of experiments
 - Parameter sweep (total 1,275 runs)
-  - util -> [32, 35, 38]
-  - GP pad -> [0, 1, 2, 3, 4]
-  - DP pad -> [0, 1, 2, 3, 4]
-  - layer adjustment -> min = 0.02, max = 0.5, step = 0.03
+  - **util** -> [32, 35, 38]
+  - **GP pad** -> [0, 1, 2, 3, 4]
+  - **DP pad** -> [0, 1, 2, 3, 4]
+  - **layer adjustment** -> min = 0.02, max = 0.5, step = 0.03
 
 
