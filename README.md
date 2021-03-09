@@ -31,7 +31,7 @@ The following files for all runs used in the experiments.
   - Timing constraint file (constraint.sdc) for the design.
 
 ### metrics.html
-HTML formal of standardized metrics collection in OpenROAD flow encompasses both Design metrics (#buffers, total WL, etc.) and Run metrics (cpu time, peak memory usage, etc.).
+HTML format of standardized metrics collection in OpenROAD flow encompasses both Design metrics (#buffers, total WL, etc.) and Run metrics (cpu time, peak memory usage, etc.).
 
 ### metrics.json
 JSON format of standardized metrics collection in OpenROAD flow encompasses both Design metrics (#buffers, total WL) and Run metrics (cpu time, peak memory usage).
