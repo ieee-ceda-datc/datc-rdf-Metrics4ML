@@ -4,7 +4,7 @@ The Metrics4ML repository consists of metrics and config files for reproducing t
 ## Repository Structure
 The repository contains the **'experiments'** folder in the top, where each experiment consists of the following naming convention
 ```
-{technology node}_{design}_{the name of experiment}
+{technology node}__{design}__{the name of experiment}
 ```
 Each experimental folder contains the contents from multiple runs.
 
