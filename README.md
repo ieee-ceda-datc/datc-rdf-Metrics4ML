@@ -35,7 +35,7 @@ The following files for all runs used in the experiments.
 HTML format of standardized metrics collection in OpenROAD flow encompasses both Design metrics (#buffers, total WL, etc.) and Run metrics (cpu time, peak memory usage, etc.).
 
 ### metrics.json
-JSON format of standardized metrics collection in OpenROAD flow encompasses both Design metrics (#buffers, total WL) and Run metrics (cpu time, peak memory usage).
+JSON format of standardized metrics collection in OpenROAD flow encompasses both Design metrics (#buffers, total WL, etc.) and Run metrics (cpu time, peak memory usage, etc.).
 
 ### README.md
 Describe the detailed configuration for each experiment.
