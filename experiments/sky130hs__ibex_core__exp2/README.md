@@ -6,10 +6,10 @@ sky130hs
 ibex_core
 
 ## Design of experiments
-- Parameter sweep (total 1,275 runs)
-  - **util** -> [32, 35, 38]
-  - **GP pad** -> [0, 1, 2, 3, 4]
-  - **DP pad** -> [0, 1, 2, 3, 4]
-  - **layer adjustment** -> min = 0.02, max = 0.5, step = 0.03
+- Parameter sweep (total of 1,275 runs)
+  - **Utilization** -> [32, 35, 38]
+  - **GlobalPlace padding** -> [0, 1, 2, 3, 4]
+  - **DetailedPlace padding** -> [0, 1, 2, 3, 4]
+  - **GlobalRoute layer adjustment** -> min = 0.02, max = 0.5, step = 0.03
 
 

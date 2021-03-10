@@ -1,5 +1,6 @@
 # datc-rdf-Metrics4ML 
-The Metrics4ML repository consists of metrics and config files for reproducing the experiment from the RDL-to-GDS flow using [OpenROAD tool](https://github.com/The-OpenROAD-Project).
+The Metrics4ML repository consists of collected metrics from example large-scale "Designs of Experiments" (DOEs), along with config files and scripts to enable reproduction of experimental metrics data, using the open-source RDL-to-GDS flow of the [OpenROAD tool](https://github.com/The-OpenROAD-Project).  
+In this repository, you will also find a description of the OpenROAD metrics **[naming convention](https://github.com/ABKGroup/Metrics4ML#metrics-naming-convention)** and example metrics .json files that are collected from tool run logfiles. 
 
 ## Repository Structure
 The repository contains the **'experiments'** folder in the top, where each experiment consists of the following naming convention
@@ -34,13 +35,33 @@ The user can reproduce the experiment with the following files and the informati
   - Timing constraint file (constraint.sdc) for the design.
 
 ### metrics.html
-HTML format of standardized metrics collection in OpenROAD flow encompasses both Design metrics (#buffers, total WL, etc.) and Run metrics (cpu time, peak memory usage, etc.).
+HTML format of standardized **metrics** collection in OpenROAD flow encompasses both Design metrics (#buffers, total WL, etc.) and Run metrics (cpu time, peak memory usage, etc.). Each run is divided into columns.
 
 ### metrics.json
-JSON format of standardized metrics collection in OpenROAD flow encompasses both Design metrics (#buffers, total WL, etc.) and Run metrics (cpu time, peak memory usage, etc.).
+JSON format of standardized **metrics** collection in OpenROAD flow encompasses both Design metrics (#buffers, total WL, etc.) and Run metrics (cpu time, peak memory usage, etc.). Each run is delimited by braces (**{,}**) in the json dictionary.
+
+For a detailed description of **metrics**, please see the following section: [Metrics Naming Convention](https://github.com/ABKGroup/Metrics4ML#metrics-naming-convention)
 
 ### README.md
 Describe the detailed configuration for each experiment.
 
+## Metrics Naming Convention
+Metrics naming has been organized based on design stage, metric category, metric name and modifiers to have a standardized mechanism of metrics reporting.
+Below figure shows an example of metrics naming convention in the current OpenROAD, based on universes of **flow stage** names, **nouns** at run-level and tool metric-level, and **modifiers**.
+
+![metrics](https://user-images.githubusercontent.com/61943381/110581877-300c9680-8120-11eb-816f-f303f9a32137.png)
+
+A sample of the logger output and extraction to metrics dashboard from the .json (or .html) is shown in the figure below.
+![metrics2](https://user-images.githubusercontent.com/61943381/110583480-998da480-8122-11eb-854e-a82e6fe60fce.png)
+
+In this way, we are currently collecting a total of 60 metrics, and we plan to continue adding metrics as needed to support ML and flow optimization.
+
+
+
+
+
+
+
+  
 
 
