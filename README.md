@@ -3,20 +3,17 @@ The Metrics4ML repository consists of collected metrics from example large-scale
 In this repository, you will also find a description of the OpenROAD metrics **[naming convention](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML#metrics-naming-convention)** and example metrics json files that are collected from tool runs. 
 
 ## Repository Structure
-The repository contains the **'experiments'** folder in the top, where each experiment consists of the following naming convention
+The repository contains the **'experiments'** folder in the top. Each sub directory contains the results from specific
+experiment and has the following naming convention:
 ```
 {technology node}__{design}__{the name of experiment}
 ```
-Each experimental folder contains the contents from multiple runs.
-
-In addition, each experimental folder consists of the following contents.
+The contents of each "experiment" sub directory are
 - all_config_files.tgz
 - metrics.html
 - metrics.json
 - README.md
 
-
-The following is a description of the contents that each experimental folder contains.
 ### all_config_files.tgz
 The following files for all runs used in the experiments.
 The user can reproduce the experiment with the following files and the information described in metrics.json.
