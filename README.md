@@ -1,6 +1,6 @@
 # datc-rdf-Metrics4ML 
-The Metrics4ML repository consists of collected metrics from example large-scale "Designs of Experiments" (DOEs), along with config files and scripts to enable reproduction of experimental metrics data, using the open-source RDL-to-GDS flow of the [OpenROAD tool](https://github.com/The-OpenROAD-Project).  
-In this repository, you will also find a description of the OpenROAD metrics **[naming convention](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML#metrics-naming-convention)** and example metrics .json files that are collected from tool run logfiles. 
+The Metrics4ML repository consists of collected metrics from example large-scale "Designs of Experiments" (DOEs) runs, along with config files and scripts to enable reproduction of experimental metrics data, using the open-source RTL-to-GDS flow of the [OpenROAD tool](https://github.com/The-OpenROAD-Project).  
+In this repository, you will also find a description of the OpenROAD metrics **[naming convention](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML#metrics-naming-convention)** and example metrics json files that are collected from tool runs. 
 
 ## Repository Structure
 The repository contains the **'experiments'** folder in the top, where each experiment consists of the following naming convention
