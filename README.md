@@ -3,27 +3,27 @@ The Metrics4ML repository consists of collected metrics from example large-scale
 In this repository, you will also find a description of the OpenROAD metrics **[naming convention](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML#metrics-naming-convention)** and example metrics json files that are collected from tool runs. 
 
 ## Repository Structure
-The repository contains the **'experiments'** folder in the top. Each sub directory contains the results from specific
+The repository contains the **'experiments'** folder in the top. Each sub directory contains the results from a specific
 experiment and has the following naming convention:
 ```
 {technology node}__{design}__{the name of experiment}
 ```
-The contents of each "experiment" sub directory are
+The contents of each "experiment" sub directory are:
 - all_config_files.tgz
 - metrics.html
 - metrics.json
 - README.md
 
 ### all_config_files.tgz
-The following files for all runs used in the experiments.
-The user can reproduce the experiment with the following files and the information described in metrics.json.
+This contains a "data" directory that is further broken down to the individual design run directories that contain all the
+Makefile and config file settings to replicate the runs
 
 - Makefile
   - OpenROAD Makefile to replace original [Makefile](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts/blob/master/flow/Makefile).
 
-- Technology platform config (.mk) file
+- Technology platform config.mk file
   - Replaces the config file used by each technology platform in the OpenROAD flow.
-  - Example) sky130hs platform [config.mk](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts/blob/master/flow/platforms/sky130hs/config.mk) file.
+  - Example sky130hs platform [config.mk](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts/blob/master/flow/platforms/sky130hs/config.mk) file.
 
 - design/config.mk
   - Design config file (config.mk) used by OpenROAD flow.
