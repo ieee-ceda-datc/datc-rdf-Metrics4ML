@@ -1,4 +1,6 @@
 # sky130hs__ibex_core__exp1
+## OpenROAD Version ##
+commit: "b'322161f2664f6ff29b64097e71b9e95a2098ca49'"
 ## Technology name
 sky130hs
 
