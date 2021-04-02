@@ -59,14 +59,14 @@ A sample of the logger output and extraction to metrics dashboard from the .json
 In this way, we are currently collecting a total of 60 metrics, and we plan to continue adding metrics as needed to support ML and flow optimization.
 
 ## FAQs
-1. Q. Isn't a single JSON file for independent run better than one "big list" of JSON objects for scalability in data collection?
-A. OpenROAD metrics actually creates a single JSON file for each run and stage, so metrics support the scalability you asked us. Metrics also has the ability to collect it into one "big list" JSON object, and we uploaded the "big list" JSON file to this repository. 
+1. Q. Isn't a single JSON file for independent runs better than one "big list" of JSON objects for scalability in data collection?
+A. Metrics for individual runs are also present as json files in the run directory for each run. OpenROAD metrics collection, then collates all of the individual metrics into a single json file for the entire experiment for ease of data analytics.
 
 2. Q. Where can I find the version name of the tool to reproduce the experiments?
-A. For the version and git commit used in each experiment, please refer to "run__flow__date" "run__flow__version" and "run__flow__commit" inside the metrics.json file.
+A. For the version and run date and git commit used in each experiment, please refer to "run__flow__date", "run__flow__version" and "run__flow__commit" inside the metrics.json file.
 
 3. Q. Does OpenROAD tool guarantees the exact same results with the same configuration and input files?
-A. We believe that the current OpenROAD version does not have such "non-deterministic" behavior. However, since the placement and routing features are constantly being developed, we would appreciate it if you could understand that depending on the version, they may exhibit non-deterministic behavior. 
+A. We believe that the current OpenROAD version does not have any "non-deterministic" behavior. With the same release version and same configuration and input files, we should see identical results.  However, since the underlying engines are constantly evolving, the metrics can and will change across new releases. The golden results for latest OpenROAD release is also uploaded to github 
 
   
 
