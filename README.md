@@ -1,6 +1,6 @@
 # datc-rdf-Metrics4ML 
 The Metrics4ML repository consists of collected metrics from example large-scale "Designs of Experiments" (DOEs) runs, along with config files and scripts to enable reproduction of experimental metrics data, using the open-source RTL-to-GDS flow of the [OpenROAD tool](https://github.com/The-OpenROAD-Project).  
-In this repository, you will also find a description of the OpenROAD metrics **[naming convention](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML#metrics-naming-convention)** and example metrics json files that are collected from tool runs. 
+In this repository, you will also find a description of the OpenROAD metrics **[naming convention](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML#metrics-naming-convention)** and example metrics JSON files that are collected from tool runs. 
 
 ## Contents
 * [Repository Structure](#repository-structure)
@@ -40,7 +40,7 @@ Makefile and config file settings to replicate the runs
 HTML format of standardized **metrics** collection in OpenROAD flow encompasses both Design metrics (#buffers, total WL, etc.) and Run metrics (cpu time, peak memory usage, etc.). Each run is divided into columns.
 
 ### metrics.json
-JSON format of standardized **metrics** collection in OpenROAD flow encompasses both Design metrics (#buffers, total WL, etc.) and Run metrics (cpu time, peak memory usage, etc.). Each run is delimited by braces (**{,}**) in the json dictionary.
+JSON format of standardized **metrics** collection in OpenROAD flow encompasses both Design metrics (#buffers, total WL, etc.) and Run metrics (cpu time, peak memory usage, etc.). Each run is delimited by braces (**{,}**) in the JSON dictionary.
 
 For a detailed description of **metrics**, please see the following section: [Metrics Naming Convention](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML#metrics-naming-convention)
 
@@ -59,10 +59,14 @@ A sample of the logger output and extraction to metrics dashboard from the .json
 In this way, we are currently collecting a total of 60 metrics, and we plan to continue adding metrics as needed to support ML and flow optimization.
 
 ## FAQs
+1. Q. Isn't a single JSON file for independent run better than one "big list" of JSON objects for scalability in data collection?
+A. OpenROAD metrics actually creates a single JSON file for each run and stage, so metrics support the scalability you asked us. Metrics also has the ability to collect it into one "big list" JSON object, and we uploaded the "big list" JSON file to this repository. 
 
+2. Q. Where can I find the version name of the tool to reproduce the experiments?
+A. For the version and git commit used in each experiment, please refer to "run__flow__date" "run__flow__version" and "run__flow__commit" inside the metrics.json file.
 
-
-
+3. Q. Does OpenROAD tool guarantees the exact same results with the same configuration and input files?
+A. We believe that the current OpenROAD version does not have such "non-deterministic" behavior. However, since the placement and routing features are constantly being developed, we would appreciate it if you could understand that depending on the version, they may exhibit non-deterministic behavior. 
 
   
 
