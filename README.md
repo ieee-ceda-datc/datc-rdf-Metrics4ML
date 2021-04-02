@@ -3,9 +3,9 @@ The Metrics4ML repository consists of collected metrics from example large-scale
 In this repository, you will also find a description of the OpenROAD metrics **[naming convention](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML#metrics-naming-convention)** and example metrics json files that are collected from tool runs. 
 
 ## Contents
-* [Repository Structure] (#repository-structure)
-* [Metrics Naming Convention] (#metrics-naming-convention)
-* [FAQs] (#faqs)
+* [Repository Structure](#repository-structure)
+* [Metrics Naming Convention](#metrics-naming-convention)
+* [FAQs](#faqs)
 
 ## Repository Structure
 The repository contains the **'experiments'** folder in the top. Each sub directory contains the results from a specific
