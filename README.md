@@ -2,6 +2,11 @@
 The Metrics4ML repository consists of collected metrics from example large-scale "Designs of Experiments" (DOEs) runs, along with config files and scripts to enable reproduction of experimental metrics data, using the open-source RTL-to-GDS flow of the [OpenROAD tool](https://github.com/The-OpenROAD-Project).  
 In this repository, you will also find a description of the OpenROAD metrics **[naming convention](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML#metrics-naming-convention)** and example metrics json files that are collected from tool runs. 
 
+## Contents
+* [Repository Structure] (#repository-structure)
+* [Metrics Naming Convention] (#metrics-naming-convention)
+* [FAQs] (#faqs)
+
 ## Repository Structure
 The repository contains the **'experiments'** folder in the top. Each sub directory contains the results from a specific
 experiment and has the following naming convention:
@@ -53,7 +58,7 @@ A sample of the logger output and extraction to metrics dashboard from the .json
 
 In this way, we are currently collecting a total of 60 metrics, and we plan to continue adding metrics as needed to support ML and flow optimization.
 
-
+## FAQs
 
 
 
