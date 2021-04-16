@@ -48,10 +48,8 @@ For a detailed description of **metrics**, please see the following section: [Me
 Describe the detailed configuration for each experiment.
 
 ## Metrics Naming Convention
-Metrics naming has been organized based on OpenROAD version, design stage, metric category, metric name and modifiers to have a standardized mechanism of metrics reporting.
-Below figure shows an example of metrics naming convention in the current OpenROAD, based on universes of **flow stage** names, **nouns** at run-level and tool metric-level, and **modifiers**.
 
-![metrics](https://user-images.githubusercontent.com/61943381/110588518-fc366e80-8129-11eb-84a4-392614912865.png)
+Metrics naming has been organized based on OpenROAD version, design stage, metric category, metric name and modifiers to have a standardized mechanism of metrics reporting.
 
 A sample of the logger output and extraction to metrics dashboard from the .json (or .html) is shown in the figure below.
 ![metrics2](https://user-images.githubusercontent.com/61943381/110588546-03f61300-812a-11eb-8270-247ef733fbc4.png)
