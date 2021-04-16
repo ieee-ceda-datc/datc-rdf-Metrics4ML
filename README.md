@@ -51,6 +51,9 @@ Describe the detailed configuration for each experiment.
 
 Metrics naming has been organized based on OpenROAD version, design stage, metric category, metric name and modifiers to have a standardized mechanism of metrics reporting.
 
+The header of the metrics file contains information pertaining the the OpenROAD release and design data such as design
+name and target platform
+
 A sample of the logger output and extraction to metrics dashboard from the .json (or .html) is shown in the figure below.
 ![metrics2](https://user-images.githubusercontent.com/61943381/110588546-03f61300-812a-11eb-8270-247ef733fbc4.png)
 
