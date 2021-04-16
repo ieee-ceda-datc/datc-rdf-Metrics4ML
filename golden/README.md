@@ -3,4 +3,4 @@ identified in the json file
 
 The set of designs are:
  - sky130hd:  gcd, aes, ibex, jpeg
- - sky10hs:   gcd, aes, ibex, jpeg
+ - sky130hs:   gcd, aes, ibex, jpeg
