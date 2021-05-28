@@ -1,5 +1,10 @@
-# Example run
-In this example run, results are not compressed by tarball to show the file structure.
+# Sample run
+In this sample run, results are not compressed by tarball to show the file structure.
+
+## metrics (.json) files 
+The metrics are collected into metrics/ directory. For each run, the metrics are collected separately as a json file.
+The metrics json file name will be the following naming convention:
+- metrics-DoE-{variant name}.json
 
 ## config files 
 This configs directory contains the design config files used for each run.
