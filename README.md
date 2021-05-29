@@ -63,7 +63,15 @@ name" and one or more "metric modifiers" separated by user specified delimeter s
 including the physical PPA metrics, "timing" to represent all the timing PPA metrics, "clocks" to represent all the
 primary and derived clocks and their values and "power" to represent all the power PPA metrics.
 
-A sample metrics file generated form OpenROAD is show in [sample_metrics.json](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML/blob/main/metrics_sample.json )
+Some sample metrics area:
+- design__instance__stdcell__count  represents the the number of std cell instances in the design at that specific stage
+- timing__setup__wns  represents the worst negative slack in the design
+- timing__setup__wns__clock:<clock_name>:path_group:<path_group_name>  represents the worst negative slack in the design
+  for a specific clock and a specific path group.
+- route__wirelength__estimated  represents the estimated wirelength at that specific stage.
+- power__switching__total  represents to total switching power consumption
+
+A sample metrics file generated form the OpenROAD flow for the open-source core "ibex" on the open-source platform sky130-hd is show in [sample_metrics.json](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML/blob/main/metrics_sample.json )
 
 ## FAQs
 1. Q. Isn't a single JSON file for independent runs better than one "big list" of JSON objects for scalability in data collection?  
