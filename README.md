@@ -66,13 +66,10 @@ Some sample metrics area:
 A sample metrics file generated form the OpenROAD flow for the open-source core "ibex" on the open-source platform sky130-hd is show in [sample_metrics.json](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML/blob/main/metrics_sample.json )
 
 ## FAQs
-1. Q. Isn't a single JSON file for independent runs better than one "big list" of JSON objects for scalability in data collection?  
-A. Metrics for individual runs are also present as json files in the run directory for each run. OpenROAD metrics collection, then collates all of the individual metrics into a single json file for the entire experiment for ease of data analytics.
-
-2. Q. Where can I find the version name of the tool to reproduce the experiments?  
+1. Q. Where can I find the version name of the tool to reproduce the experiments?  
 A. For the version and run date and git commit used in each experiment, please refer to  stage "run" and the metrics "flow__generate__date", "flow__openroad__version" and "flow__openroad__commit" in the json file
 
-3. Q. Does OpenROAD tool guarantees the exact same results with the same configuration and input files?  
+2. Q. Does OpenROAD tool guarantees the exact same results with the same configuration and input files?  
 A. We believe that the current OpenROAD version does not have any "non-deterministic" behavior. With the same release version and same configuration and input files, we should see identical results.  However, since the underlying engines are constantly evolving, the metrics can and will change across new releases. The golden results for latest OpenROAD release is also uploaded to github 
 
   
