@@ -64,12 +64,12 @@ including the physical PPA metrics, "timing" to represent all the timing PPA met
 primary and derived clocks and their values and "power" to represent all the power PPA metrics.
 
 Some sample metrics area:
-- design__instance__stdcell__count  represents the the number of std cell instances in the design at that specific stage
-- timing__setup__wns  represents the worst negative slack in the design
-- timing__setup__wns__clock:<clock_name>:path_group:<path_group_name>  represents the worst negative slack in the design
+- ***design__instance__stdcell__count***  represents the the number of std cell instances in the design at that specific stage
+- ***timing__setup__wns***  represents the worst negative slack in the design
+- ***timing__setup__wns__clock:<clock_name>:path_group:<path_group_name>***  represents the worst negative slack in the design
   for a specific clock and a specific path group.
-- route__wirelength__estimated  represents the estimated wirelength at that specific stage.
-- power__switching__total  represents to total switching power consumption
+- ***route__wirelength__estimated***  represents the estimated wirelength at that specific stage.
+- ***power__switching__total***  represents the total switching power consumption
 
 A sample metrics file generated form the OpenROAD flow for the open-source core "ibex" on the open-source platform sky130-hd is show in [sample_metrics.json](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML/blob/main/metrics_sample.json )
 
@@ -78,7 +78,7 @@ A sample metrics file generated form the OpenROAD flow for the open-source core 
 A. Metrics for individual runs are also present as json files in the run directory for each run. OpenROAD metrics collection, then collates all of the individual metrics into a single json file for the entire experiment for ease of data analytics.
 
 2. Q. Where can I find the version name of the tool to reproduce the experiments?  
-A. For the version and run date and git commit used in each experiment, please refer to "run__flow__date", "run__flow__version" and "run__flow__commit" inside the metrics.json file.
+A. For the version and run date and git commit used in each experiment, please refer to  stage "run" and the metrics "flow__generate__date", "flow__openroad__version" and "flow__openroad__commit" in the json file
 
 3. Q. Does OpenROAD tool guarantees the exact same results with the same configuration and input files?  
 A. We believe that the current OpenROAD version does not have any "non-deterministic" behavior. With the same release version and same configuration and input files, we should see identical results.  However, since the underlying engines are constantly evolving, the metrics can and will change across new releases. The golden results for latest OpenROAD release is also uploaded to github 
