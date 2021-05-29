@@ -14,4 +14,5 @@ The design config files for each run consist of the following files:
 - constraint-DoE-{variant name}.sdc (if required)
 
 To reproduce the each run, user should set 'config-DoE-{variant name}.mk' as an 'DESIGN_CONFIG' variable for [Makefile](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts/blob/master/flow/Makefile) in OpenROAD tool.
+The above three files for each run must be located in the {OpenROAD}/flow/designs/{platform}/{design}/ directory.
 
