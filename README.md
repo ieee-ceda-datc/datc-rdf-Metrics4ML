@@ -50,20 +50,20 @@ Describe the detailed configuration for each experiment.
 
 ## Metrics Naming Convention
 
-Metrics naming has been organized based on OpenROAD version, design stage, metric category, metric name and modifiers to have a standardized mechanism of metrics reporting.
+Metrics 2.1 is a proposed open-source format for collecting and storing metrics for an RTL-to_GDS flow. The open-source tool OpenROAD uses Metrics 2.1 for reporting design and tool metrics. Metrics serve two valuable functions. They help in the continuous integration process by validating the QoR of latest checkins and Pull Requests against a known "golden" metrics and to collect and store the metrics persistently across multiple design runs with different parameter settings. The first is essential, as it helps to monitor the QoR of the various engines and flows against the variety of code changes. The second is integral in generating large amounts of data based on various input parameter settings.  This allows users to build machine learning models to hypertune the parameters and also predict the sweet spot of parameter settings for new designs and platforms.
 
-The header of the metrics file contains information pertaining to the OpenROAD release such as commit hash,
-and the run date and design data information such as design name and the target platform
+Metrics 2.1 is organized as a hierarchical JSON object. The top level of the JSON object is the "stage" or "snapshot". A
+stage is pre-defined flow stage of the design flow and the current stages for Metrics 2.1 are "run", "init", "synth",
+"floorplan", "globalplace", "placeopt", "detailedplace", "cts", "globalroute", "detailedroute" and "finish". A snapshot
+can be any user defined stage with a unique name to capture the metrics at any point during the flow.
 
-The current design stages are "synth", "constraints", "floorplan", "globalplace", "placeopt", "detailedplace",
-"cts", "globalroute", "detailedroute" and "finish". The metric categories are "area", "timing", "power"
-and "clocks".  The metric name and modifiers describe additional information about the metrics. 
-For example the metrics "floorplan__area__stdcell__count" specifies the number of standard cell instances at the floorplan stage. 
+Inside each stage or snapshot are the individual metrics. Metrics are futher organized as "metrics category", "metric
+name" and one or more "metric modifiers" separated by user specified delimeter string. The current metric categories are
+"flow"  to represent all the flow related metrics, "design" to represent all the metrics relating to the design data
+including the physical PPA metrics, "timing" to represent all the timing PPA metrics, "clocks" to represent all the
+primary and derived clocks and their values and "power" to represent all the power PPA metrics.
 
-A sample of the logger output and extraction to metrics dashboard from the .json (or .html) is shown in the figure below.
-![metrics2](https://user-images.githubusercontent.com/61943381/110588546-03f61300-812a-11eb-8270-247ef733fbc4.png)
-
-In this way, we are currently collecting a total of 60 metrics, and we plan to continue adding metrics as needed to support ML and flow optimization.
+A sample metrics file generated form OpenROAD is show in [sample_metrics.json](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML/blob/main/metrics_sample.json )
 
 ## FAQs
 1. Q. Isn't a single JSON file for independent runs better than one "big list" of JSON objects for scalability in data collection?  
