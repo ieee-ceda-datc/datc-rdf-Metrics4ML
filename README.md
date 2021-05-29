@@ -21,27 +21,20 @@ The contents of each "experiment" sub directory are:
 - README.md
 
 ### all_config_files.tgz
+This configs directory contains the design config files used for each run.
+The design config files for each run consist of the following files:
+- config-DoE-{variant name}.mk
+- fastroute-DoE-{variant name}.tcl (if required)
+- constraint-DoE-{variant name}.sdc (if required)
+
+To reproduce the each run, user should set 'config-DoE-{variant name}.mk' as an 'DESIGN_CONFIG' variable for [Makefile](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts/blob/master/flow/Makefile) in OpenROAD tool.
+The above three files for each run must be located in the {OpenROAD}/flow/designs/{platform}/{design}/ directory.
 This contains a "data" directory that is further broken down to the individual design run directories that contain all the
-Makefile and config file settings to replicate the runs
 
-- Makefile
-  - OpenROAD Makefile to replace original [Makefile](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts/blob/master/flow/Makefile).
-
-- Technology platform config.mk file
-  - Replaces the config file used by each technology platform in the OpenROAD flow.
-  - Example sky130hs platform [config.mk](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts/blob/master/flow/platforms/sky130hs/config.mk) file.
-
-- design/config.mk
-  - Design config file (config.mk) used by OpenROAD flow.
-
-- design/constraint.sdc
-  - Timing constraint file (constraint.sdc) for the design.
-
-### metrics.html
-HTML format of standardized **metrics** collection in OpenROAD flow encompasses both Design metrics (#buffers, total WL, etc.) and Run metrics (cpu time, peak memory usage, etc.). Each run is divided into columns.
-
-### metrics.json
-JSON format of standardized **metrics** collection in OpenROAD flow encompasses both Design metrics (#buffers, total WL, etc.) and Run metrics (cpu time, peak memory usage, etc.). Each run is delimited by braces (**{,}**) in the JSON dictionary.
+## metrics (.json) files 
+The metrics are collected into metrics/ directory. For each run, the metrics are collected separately as a json file.
+The metrics json file name will be the following naming convention:
+- metrics-DoE-{variant name}.json
 
 For a detailed description of **metrics**, please see the following section: [Metrics Naming Convention](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML#metrics-naming-convention)
 
