@@ -1,6 +1,7 @@
 # datc-rdf-Metrics4ML 
 The Metrics4ML repository consists of collected metrics from example large-scale "Designs of Experiments" (DOEs) runs, along with config files and scripts to enable reproduction of experimental metrics data, using the open-source RTL-to-GDS flow of the [OpenROAD tool](https://github.com/The-OpenROAD-Project).  
-In this repository, you will also find a description of Metrics 2.1, an open-source format for collecting design and tool metrics for an RTL-to-GDS flow. OpenROAD uses Metrics 2.1 to report metrics data which is used in the continuous integration (CI) process of OpenROAD to validate Pull Requests into the project. OpenROAD metrics **[naming convention](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML#metrics-naming-convention)** and example metrics JSON files that are collected from tool runs  https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML/blob/main/metrics_sample.json 
+
+In this repository, you will also find an overview of Metrics 2.1, an open-source format for collecting design and tool metrics for an RTL-to-GDS flow. OpenROAD uses Metrics 2.1 to report metrics data which is used in the continuous integration (CI) process of OpenROAD to validate Pull Requests into the project. The naming convention for Metrics 2.1 and a sample of the metrics file is shown in **[naming convention](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML#metrics-naming-convention)**
 
 ## Contents
 * [Repository Structure](#repository-structure)
