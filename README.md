@@ -16,8 +16,7 @@ experiment and has the following naming convention:
 ```
 The contents of each "experiment" sub directory are:
 - all_config_files.tgz
-- metrics.html
-- metrics.json
+- metrics (.json) files
 - README.md
 
 ### all_config_files.tgz
