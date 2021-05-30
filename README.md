@@ -16,32 +16,24 @@ experiment and has the following naming convention:
 ```
 The contents of each "experiment" sub directory are:
 - all_config_files.tgz
-- metrics.html
-- metrics.json
+- metrics (.json) files
 - README.md
 
 ### all_config_files.tgz
+This configs directory contains the design config files used for each run.
+The design config files for each run consist of the following files:
+- config-DoE-{variant name}.mk
+- fastroute-DoE-{variant name}.tcl (if required)
+- constraint-DoE-{variant name}.sdc (if required)
+
+To reproduce the each run, user should set 'config-DoE-{variant name}.mk' as an 'DESIGN_CONFIG' variable for [Makefile](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts/blob/master/flow/Makefile) in OpenROAD tool.
+The above three files for each run must be located in the {OpenROAD}/flow/designs/{platform}/{design}/ directory.
 This contains a "data" directory that is further broken down to the individual design run directories that contain all the
-Makefile and config file settings to replicate the runs
 
-- Makefile
-  - OpenROAD Makefile to replace original [Makefile](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts/blob/master/flow/Makefile).
-
-- Technology platform config.mk file
-  - Replaces the config file used by each technology platform in the OpenROAD flow.
-  - Example sky130hs platform [config.mk](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts/blob/master/flow/platforms/sky130hs/config.mk) file.
-
-- design/config.mk
-  - Design config file (config.mk) used by OpenROAD flow.
-
-- design/constraint.sdc
-  - Timing constraint file (constraint.sdc) for the design.
-
-### metrics.html
-HTML format of standardized **metrics** collection in OpenROAD flow encompasses both Design metrics (#buffers, total WL, etc.) and Run metrics (cpu time, peak memory usage, etc.). Each run is divided into columns.
-
-### metrics.json
-JSON format of standardized **metrics** collection in OpenROAD flow encompasses both Design metrics (#buffers, total WL, etc.) and Run metrics (cpu time, peak memory usage, etc.). Each run is delimited by braces (**{,}**) in the JSON dictionary.
+## metrics (.json) files 
+The metrics are collected into metrics/ directory. For each run, the metrics are collected separately as a json file.
+The metrics json file name will be the following naming convention:
+- metrics-DoE-{variant name}.json
 
 For a detailed description of **metrics**, please see the following section: [Metrics Naming Convention](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML#metrics-naming-convention)
 
@@ -74,13 +66,10 @@ Some sample metrics area:
 A sample metrics file generated form the OpenROAD flow for the open-source core "ibex" on the open-source platform sky130-hd is show in [sample_metrics.json](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML/blob/main/metrics_sample.json )
 
 ## FAQs
-1. Q. Isn't a single JSON file for independent runs better than one "big list" of JSON objects for scalability in data collection?  
-A. Metrics for individual runs are also present as json files in the run directory for each run. OpenROAD metrics collection, then collates all of the individual metrics into a single json file for the entire experiment for ease of data analytics.
-
-2. Q. Where can I find the version name of the tool to reproduce the experiments?  
+1. Q. Where can I find the version name of the tool to reproduce the experiments?  
 A. For the version and run date and git commit used in each experiment, please refer to  stage "run" and the metrics "flow__generate__date", "flow__openroad__version" and "flow__openroad__commit" in the json file
 
-3. Q. Does OpenROAD tool guarantees the exact same results with the same configuration and input files?  
+2. Q. Does OpenROAD tool guarantees the exact same results with the same configuration and input files?  
 A. We believe that the current OpenROAD version does not have any "non-deterministic" behavior. With the same release version and same configuration and input files, we should see identical results.  However, since the underlying engines are constantly evolving, the metrics can and will change across new releases. The golden results for latest OpenROAD release is also uploaded to github 
 
   
