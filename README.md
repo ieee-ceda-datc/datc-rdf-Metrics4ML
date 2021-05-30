@@ -55,7 +55,7 @@ name" and one or more "metric modifiers" separated by a user specified delimeter
 including the physical PPA metrics, "timing" to represent all the timing PPA metrics, "clocks" to represent all the
 primary and derived clocks and their values and "power" to represent all the power PPA metrics.
 
-Some sample metrics area:
+Some sample metrics are:
 - ***design__instance__stdcell__count***  represents the the number of std cell instances in the design at that specific stage.
 - ***timing__setup__wns***  represents the worst negative slack in the design.
 - ***timing__setup__wns__clock:<clock_name>:path_group:<path_group_name>***  represents the worst negative slack in the design
