@@ -19,4 +19,4 @@ The above three files for each run must be located in the {OpenROAD}/flow/design
 [A sample Jupyter
 Notebook](http://htmlpreview.github.com/?https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML/blob/main/experiments/sky130hd__ibex_core__sample/metrics_21_layer_adjust.html) to visualize the data and build simple models to predict on unseen data is shown 
 
-[The output from running the Jupyter notebook](http://htmlpreview.github.com/?https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML/blob/main/experiments/sky130hd__ibex_core__sample/metrics_21_layer_adjust.html) is also shown
+[The output from running the Jupyter notebook](http://htmlpreview.github.io/?https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML/blob/main/experiments/sky130hd__ibex_core__sample/metrics_21_layer_adjust.html) is also shown
