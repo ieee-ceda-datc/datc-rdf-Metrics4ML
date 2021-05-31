@@ -50,18 +50,18 @@ stage is pre-defined flow stage of the design flow and the current stages for Me
 can be any user defined stage with a unique name to capture the metrics at any point during the flow.
 
 Inside each stage or snapshot are the individual metrics. Metrics are futher organized as "metrics category", "metric
-name" and one or more "metric modifiers" separated by user specified delimeter string. The current metric categories are
+name" and one or more "metric modifiers" separated by a user specified delimeter string. The current metric categories are
 "flow"  to represent all the flow related metrics, "design" to represent all the metrics relating to the design data
 including the physical PPA metrics, "timing" to represent all the timing PPA metrics, "clocks" to represent all the
 primary and derived clocks and their values and "power" to represent all the power PPA metrics.
 
-Some sample metrics area:
-- ***design__instance__stdcell__count***  represents the the number of std cell instances in the design at that specific stage
-- ***timing__setup__wns***  represents the worst negative slack in the design
+Some sample metrics are:
+- ***design__instance__stdcell__count***  represents the the number of std cell instances in the design at that specific stage.
+- ***timing__setup__wns***  represents the worst negative slack in the design.
 - ***timing__setup__wns__clock:<clock_name>:path_group:<path_group_name>***  represents the worst negative slack in the design
   for a specific clock and a specific path group.
 - ***route__wirelength__estimated***  represents the estimated wirelength at that specific stage.
-- ***power__switching__total***  represents the total switching power consumption
+- ***power__switching__total***  represents the total switching power consumption.
 
 A sample metrics file generated form the OpenROAD flow for the open-source core "ibex" on the open-source platform sky130-hd is show in [sample_metrics.json](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML/blob/main/metrics_sample.json )
 
