@@ -85,14 +85,6 @@
     "mem__peak": 328544.0
   },
   "detailedroute": {
-    "route__wirelength": 853390.0,
-    "route__via__count": 139882.0,
-    "route__drc_errors__count": 0,
-    "runtime__total": "31:31.77",
-    "cpu__total": "188%",
-    "mem__peak": 921576.0
-  },
-  "finish": {
     "clock__latency__min": 2.44,
     "clock__latency__max": 8.02,
     "clock__skew__worst": 5.58,
@@ -102,10 +94,11 @@
     "power__switch__total": 0.025,
     "power__leakage__total": 5.99e-08,
     "power__total": 0.0409,
-    "design__instance__area": 426109.0,
-    "design__instance__utilization": 100.0,
-    "runtime__total": "0:28.18",
-    "cpu__total": "99%",
-    "mem__peak": 512588.0
+    "route__wirelength": 853390.0,
+    "route__via__count": 139882.0,
+    "route__drc_errors__count": 0,
+    "runtime__total": "31:31.77",
+    "cpu__total": "188%",
+    "mem__peak": 921576.0
   }
 }
