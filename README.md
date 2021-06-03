@@ -63,8 +63,6 @@ Some sample metrics are:
 - ***route__wirelength__estimated***  represents the estimated wirelength at that specific stage.
 - ***power__switching__total***  represents the total switching power consumption.
 
-A sample metrics file generated form the OpenROAD flow for the open-source core "ibex" on the open-source platform sky130-hd is show in [sample_metrics.json](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML/blob/main/metrics_sample.json )
-
 The Metrics2.1 format is shown in [Metrics2.1 format](https://docs.google.com/spreadsheets/d/e/2PACX-1vQGrIT7VH7HJBvddfoZmFlhb92Q1gQaspRZS9nNnrN5OkWwkrPeHlg4zIfsFRmP_33t7brFEkobizuc/pubhtml?gid=1794314402&single=true) and a sample metrics file generated form the OpenROAD flow for the open-source core "ibex" on the open-source platform sky130-hd is show in [sample_metrics.json](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML/blob/main/metrics_sample.json). The sample json shows the metrics as a json record with individual metrics for each stage of the design.
 
 
