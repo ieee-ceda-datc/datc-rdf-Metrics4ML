@@ -65,6 +65,8 @@ Some sample metrics are:
 
 A sample metrics file generated form the OpenROAD flow for the open-source core "ibex" on the open-source platform sky130-hd is show in [sample_metrics.json](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML/blob/main/metrics_sample.json )
 
+https://docs.google.com/spreadsheets/d/e/2PACX-1vQGrIT7VH7HJBvddfoZmFlhb92Q1gQaspRZS9nNnrN5OkWwkrPeHlg4zIfsFRmP_33t7brFEkobizuc/pubhtml?gid=1794314402&single=true
+
 ## FAQs
 1. Q. Where can I find the version name of the tool to reproduce the experiments?  
 A. For the version and run date and git commit used in each experiment, please refer to  stage "run" and the metrics "flow__generate__date", "flow__openroad__version" and "flow__openroad__commit" in the json file
