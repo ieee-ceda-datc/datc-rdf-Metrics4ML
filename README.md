@@ -1,7 +1,7 @@
 # datc-rdf-Metrics4ML 
 The Metrics4ML repository consists of collected metrics from example large-scale "Designs of Experiments" (DOEs) runs, along with config files and scripts to enable reproduction of experiments and their metrics data, using the open-source RTL-to-GDS flow of the [OpenROAD tool](https://github.com/The-OpenROAD-Project).  
 
-In this repository, you will also find an overview of Metrics 2.1, an open-source format for collecting design and tool metrics for an RTL-to-GDS flow. OpenROAD uses Metrics 2.1 to report metrics data which is used in the continuous integration (CI) process of OpenROAD to validate Pull Requests into the project. The naming convention for Metrics 2.1 and a sample of the metrics file is shown  **[here](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML#metrics-naming-convention)**
+In this repository, you will also find an overview of METRICS2.1, an open-source format for collecting design and tool metrics for an RTL-to-GDS flow. OpenROAD uses METRICS2.1 to report metrics data which is used in the continuous integration (CI) process of OpenROAD to validate Pull Requests into the project. The naming convention for METRICS2.1 and a sample of the metrics file is shown  **[here](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML#metrics-naming-convention)**
 
 ## Contents
 * [Repository Structure](#repository-structure)
@@ -42,10 +42,10 @@ Describe the detailed configuration for each experiment.
 
 ## Metrics Naming Convention
 
-Metrics 2.1 is a proposed open-source format for collecting and storing metrics for an RTL-to_GDS flow. The open-source tool OpenROAD uses Metrics 2.1 for reporting design and tool metrics. Metrics serve two valuable functions. They help in the continuous integration process by validating the QoR of latest checkins and Pull Requests against a known "golden" metrics and to collect and store the metrics persistently across multiple design runs with different parameter settings. The first is essential, as it helps to monitor the QoR of the various engines and flows against the variety of code changes. The second is integral in generating large amounts of data based on various input parameter settings.  This allows users to build machine learning models to hypertune the parameters and also predict the sweet spot of parameter settings for new designs and platforms.
+METRICS2.1 is a proposed open-source format for collecting and storing metrics for an RTL-to_GDS flow. The open-source tool OpenROAD uses METRICS2.1 for reporting design and tool metrics. Metrics serve two valuable functions. They help in the continuous integration process by validating the QoR of latest checkins and Pull Requests against a known "golden" metrics and to collect and store the metrics persistently across multiple design runs with different parameter settings. The first is essential, as it helps to monitor the QoR of the various engines and flows against the variety of code changes. The second is integral in generating large amounts of data based on various input parameter settings.  This allows users to build machine learning models to hypertune the parameters and also predict the sweet spot of parameter settings for new designs and platforms.
 
-Metrics 2.1 is organized as a hierarchical JSON object. The top level of the JSON object is the "stage" or "snapshot". A
-stage is pre-defined flow stage of the design flow and the current stages for Metrics 2.1 are "run", "init", "synth",
+METRICS2.1 is organized as a hierarchical JSON object. The top level of the JSON object is the "stage" or "snapshot". A
+stage is pre-defined flow stage of the design flow and the current stages for METRICS2.1 are "run", "init", "synth",
 "floorplan", "globalplace", "placeopt", "detailedplace", "cts", "globalroute", "detailedroute" and "finish". A snapshot
 can be any user defined stage with a unique name to capture the metrics at any point during the flow.
 
@@ -63,7 +63,7 @@ Some sample metrics are:
 - ***route__wirelength__estimated***  represents the estimated wirelength at that specific stage.
 - ***power__switching__total***  represents the total switching power consumption.
 
-The Metrics2.1 format is shown in [Metrics2.1 format](https://docs.google.com/spreadsheets/d/e/2PACX-1vQ1d21tUGgi0W_kE-RiDww1OPUmjsLbabulHcUq7mXdOAQcWFmoX34N8uVcMHkhCjUrm04Wj_bgBC-Z/pubhtml) and a sample metrics file generated form the OpenROAD flow for the open-source core "ibex" on the open-source platform sky130-hd is show in [sample_metrics.json](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML/blob/main/metrics_sample.json). The sample json shows the metrics as a json record with individual metrics for each stage of the design. Also, even though only a subset of metrics are shown in each stage, the format allows for any metric to be shown at any stage.
+The METRICS2.1 format is shown in [METRICS2.1 format](https://docs.google.com/spreadsheets/d/e/2PACX-1vQ1d21tUGgi0W_kE-RiDww1OPUmjsLbabulHcUq7mXdOAQcWFmoX34N8uVcMHkhCjUrm04Wj_bgBC-Z/pubhtml) and a sample metrics file generated form the OpenROAD flow for the open-source core "ibex" on the open-source platform sky130-hd is show in [sample_metrics.json](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML/blob/main/metrics_sample.json). The sample json shows the metrics as a json record with individual metrics for each stage of the design. Also, even though only a subset of metrics are shown in each stage, the format allows for any metric to be shown at any stage.
 
 
 ## FAQs
