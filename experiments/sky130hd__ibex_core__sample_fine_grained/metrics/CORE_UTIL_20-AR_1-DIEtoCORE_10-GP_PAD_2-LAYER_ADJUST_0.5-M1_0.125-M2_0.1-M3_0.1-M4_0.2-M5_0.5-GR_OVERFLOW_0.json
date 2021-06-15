@@ -1,0 +1,113 @@
+{
+  "run": {
+    "flow__generate__date": "2021-06-07 15:15",
+    "flow__metrics__version": "Metrics_2.1",
+    "flow__openroad__version": "1",
+    "flow__openroad__commit": "e1d8f1478d96291fd7fa5554e7b80f9d1cf67b64",
+    "flow__scripts__commit": "2484116345a52074fee4b1755656369a2a9f75ce",
+    "flow__uuid": "c9006e62-51da-4ffa-8061-10b38d77a9fa",
+    "flow__design": "ibex",
+    "flow__platform": "sky130hd",
+    "flow__platform__commit": "N/A",
+    "flow__variant": "CORE_UTIL_20-AR_1-DIEtoCORE_10-GP_PAD_2-LAYER_ADJUST_0.5-M1_0.125-M2_0.1-M3_0.1-M4_0.2-M5_0.5-GR_OVERFLOW_0"
+  },
+  "synth": {
+    "design__instance__stdcell__count": 15708.0,
+    "design__instance__stdcell__area": 127743.7664,
+    "runtime__total": "0:43.20",
+    "cpu__total": "99%",
+    "mem__peak": 254688.0
+  },
+  "constraints": {
+    "clocks__count": 1,
+    "clocks__details": [
+      "core_clock: 15.1550"
+    ]
+  },
+  "floorplan": {
+    "timing__setup__tns": 0.0,
+    "timing__setup__ws": 3.87,
+    "design__instance__stdcell__area": 127744.0,
+    "design__instance__design__util": 20.0,
+    "design__io__count": 264.0,
+    "design__instance__macros__count": 0,
+    "runtime__total": "0:01.87",
+    "cpu__total": "98%",
+    "mem__peak": 116344.0
+  },
+  "globalplace": {
+    "route__wirelength__estimated": 1199316.0,
+    "timing__setup__tns": -29010.5,
+    "timing__setup__ws": -22.63,
+    "runtime__total": "0:16.37",
+    "cpu__total": "99%",
+    "mem__peak": 320320.0
+  },
+  "placeopt": {
+    "timing__setup__tns": 0.0,
+    "timing__setup__ws": 0.85,
+    "design__instance__design__area": 160396.0,
+    "design__instance__design__util": 25.0,
+    "design__instance__stdcell__count": 24240.0,
+    "runtime__total": "0:12.42",
+    "cpu__total": "99%",
+    "mem__peak": 183716.0
+  },
+  "detailedplace": {
+    "timing__setup__tns": 0.0,
+    "timing__setup__ws": 0.84,
+    "design__instance__displacement__total": 37743.9,
+    "design__instance__displacement__mean": 1.6,
+    "desgin__instance__displacement__max": 25.5,
+    "route__wirelength__estimated": 672425.2,
+    "runtime__total": "0:08.66",
+    "cpu__total": "99%",
+    "mem__peak": 188876.0
+  },
+  "cts": {
+    "clock__latency__min": 1.38,
+    "clock__latency__max": 5.17,
+    "clock__skew__worst": 3.79,
+    "timing__setup__tns__prerepair": 0.0,
+    "timing__setup__ws__prerepair": 1.99,
+    "timing__setup__tns": -97.13,
+    "timing__setup__ws": -0.77,
+    "design__instance__hold_buffer__count": 1847.0
+  },
+  "globalroute": {
+    "clock__latency__min": 1.4,
+    "clock__latency__max": 5.32,
+    "clock__skew__worst": 3.93,
+    "timing__setup__tns": -753.68,
+    "timing__setup__ws": -1.89,
+    "timing__clock__slack": -1.893,
+    "timing__clock__period": 16.195,
+    "runtime__total": "0:17.58",
+    "cpu__total": "99%",
+    "mem__peak": 350768.0
+  },
+  "detailedroute": {
+    "route__wirelength": 947398.0,
+    "route__via__count": 140159.0,
+    "route__drc_errors__count": 0,
+    "runtime__total": "43:47.79",
+    "cpu__total": "99%",
+    "mem__peak": 873368.0
+  },
+  "finish": {
+    "clock__latency__min": 0.0,
+    "clock__latency__max": 0.0,
+    "clock__skew__worst": 0.0,
+    "timing__setup__tns": "N/A",
+    "timing__setup__ws": "N/A",
+    "power__internal__total": "N/A",
+    "power__switch__total": "N/A",
+    "power__leakage__total": "N/A",
+    "power__total": "N/A",
+    "design__instance__area": "N/A",
+    "design__instance__utilization": "N/A",
+    "runtime__total": "0:10.10",
+    "cpu__total": "96%",
+    "mem__peak": 413392.0
+  }
+}
