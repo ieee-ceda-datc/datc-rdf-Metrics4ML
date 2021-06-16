@@ -19,4 +19,4 @@ The above three files for each run must be located in the {OpenROAD}/flow/design
 ## Jupyter Notebook
 [A sample Jupyter Notebook](https://nbviewer.jupyter.org/github/ieee-ceda-datc/datc-rdf-Metrics4ML/blob/main/experiments/sky130hd__ibex_core__sample_fine_grained/METRICS2.1-fine-grain.ipynb) to visualize the data and build simple models to predict on unseen data is shown.
 
-[The output from running the Jupyter notebook](https://nbviewer.jupyter.org/github/ieee-ceda-datc/datc-rdf-Metrics4ML/blob/main/experiments/sky130hd__ibe        x_core__sample_fine_grained/METRICS2.1-fine-grain.html) is also shown without the Python code.
+[The output from running the Jupyter notebook](https://nbviewer.jupyter.org/github/ieee-ceda-datc/datc-rdf-Metrics4ML/blob/main/experiments/sky130hd__ibex_core__sample_fine_grained/METRICS2.1-fine-grain.html) is also shown without the Python code.
