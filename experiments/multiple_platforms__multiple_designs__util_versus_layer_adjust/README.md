@@ -23,4 +23,7 @@ To reproduce the each run, user should set 'config-DoE-{variant name}.mk' as an 
 The above three files for each run must be located in the {OpenROAD}/flow/designs/{platform}/{design}/ directory.
 
 ## Jupyter Notebook
+[A sample Jupyter Notebook](https://nbviewer.jupyter.org/github/ieee-ceda-datc/datc-rdf-Metrics4ML/blob/main/experiments/multiple_platforms__multiple_designs__util_versus_layer_adjust/METRICS2.1-exp3.ipynb) to visualize the data and build simple models to predict on unseen data is shown.
+
+[The output from running the Jupyter notebook](https://nbviewer.jupyter.org/github/ieee-ceda-datc/datc-rdf-Metrics4ML/blob/main/experiments/multiple_platforms__multiple_designs__util_versus_layer_adjust/METRICS2.1-exp3.html) is also shown without the Python code.
 
