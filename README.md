@@ -42,18 +42,34 @@ Describe the detailed configuration for each experiment.
 
 ## Metrics Naming Convention
 
-METRICS2.1 is a proposed open-source format for collecting and storing metrics for an RTL-to_GDS flow. The open-source tool OpenROAD uses METRICS2.1 for reporting design and tool metrics. Metrics serve two valuable functions. They help in the continuous integration process by validating the QoR of latest checkins and Pull Requests against a known "golden" metrics and to collect and store the metrics persistently across multiple design runs with different parameter settings. The first is essential, as it helps to monitor the QoR of the various engines and flows against the variety of code changes. The second is integral in generating large amounts of data based on various input parameter settings.  This allows users to build machine learning models to hypertune the parameters and also predict the sweet spot of parameter settings for new designs and platforms.
+METRICS2.1 is a proposed open-source format for collecting and storing metrics for an RTL-to_GDS flow.
+The open-source tool OpenROAD uses METRICS2.1 for reporting design and tool metrics. Metrics serve two valuable functions. 
+They help in the continuous integration process by validating the QoR of latest check-ins and Pull Requests against a known "golden" metrics and to collect and store the metrics persistently across multiple design runs with different parameter settings.
+The first is essential, as it helps to monitor the QoR of the various engines and flows against the variety of code changes. 
+The second is integral in generating large amounts of data based on various input parameter settings.
+This allows users to build machine learning models to hypertune the parameters and also predict the sweet spot of parameter settings for new designs and platforms.
 
 METRICS2.1 is organized as a hierarchical JSON object. The top level of the JSON object is the "stage" or "snapshot". A
 stage is pre-defined flow stage of the design flow and the current stages for METRICS2.1 are "run", "init", "synth",
 "floorplan", "globalplace", "placeopt", "detailedplace", "cts", "globalroute", "detailedroute" and "finish". A snapshot
-can be any user defined stage with a unique name to capture the metrics at any point during the flow.
+can be any user defined stage or sub-stage with a unique name to capture the metrics at any point during the flow. For
+example, if a user is experimenting with two different optimization recipes, they can create two separate snapshots to
+capture the metrics for each recipe.
 
-Inside each stage or snapshot are the individual metrics. Metrics are futher organized as "metrics category", "metric
-name" and one or more "metric modifiers" separated by a user specified delimeter string. The current metric categories are
+Inside each stage or snapshot are the individual metrics. Metrics are further organized as "metric category", "metric
+name" and one or more "metric modifiers" separated by a user specified delimiter string.
+METERICS2.1 supports all metrics to be present at any of the stages or snapshot, but certain metrics are only
+meaningful in certain stages. The current metric categories are
 "flow"  to represent all the flow related metrics, "design" to represent all the metrics relating to the design data
 including the physical PPA metrics, "timing" to represent all the timing PPA metrics, "clocks" to represent all the
-primary and derived clocks and their values and "power" to represent all the power PPA metrics.
+primary and derived clocks and their values and "power" to represent all the power PPA metrics. 
+For each metrics category there are a set of predefined metric names that are currently supported. 
+The metric categories and metric names are currently predefined in METRICS2.1 and new categories can be added into the specification in future revisions based
+on user input. 
+
+The "metric modifier" allows for modification of a specific metric to specify additional information about the metric.
+By definition, the first modifier modifies the base metric name and subsequent modifiers, modifies the previous modifier
+to further sub-classify the metric.
 
 Some sample metrics are:
 - ***design__instance__stdcell__count***  represents the the number of std cell instances in the design at that specific stage.
