@@ -81,9 +81,20 @@ Some sample metrics are:
 
 The METRICS2.1 format is shown in [METRICS2.1 format](https://docs.google.com/spreadsheets/d/e/2PACX-1vQ1d21tUGgi0W_kE-RiDww1OPUmjsLbabulHcUq7mXdOAQcWFmoX34N8uVcMHkhCjUrm04Wj_bgBC-Z/pubhtml) and a sample metrics file generated form the OpenROAD flow for the open-source core "ibex" on the open-source platform sky130-hd is show in [sample_metrics.json](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML/blob/main/metrics_sample.json). The sample json shows the metrics as a json record with individual metrics for each stage of the design. Also, even though only a subset of metrics are shown in each stage, the format allows for any metric to be shown at any stage.
 
-Acknowledgments
+### References
+- S. Fenstermaker, D. George, A. B. Kahng, S. Mantik and B. Thielges, "METRICS: A System Architecture for Design Process Optimization" Proc. ACM/IEEE Design Automation Conf., June 2000, pp. 705-710. pdf
+- A. B. Kahng and S. Mantik, "A System for Automatic Recording and Prediction of Design Quality Metrics", Proc. International Symposium on Quality in Electronic Design, March 2001, pp. 81-86 pdf
+MARCO GSRC Metrics website: https://vlsicad.ucsd.edu/GSRC/metrics/
+- S. Hashemi , C.-T. Ho , A. B. Kahng , H.-Y. Liu , and S. Reda,   �METRICS 2.0: A  machine learning based optimization system for IC Design�, WOSET 2018   pdf
+- ICCAD-2021 Metrics4ML paper  (authors/title until available in November)
 
-METRICS2.1 has its roots in the original METRICS1.0 (DAC-2000 and ISQED-2001 papers; Dr. Stefanus Mantik�s Ph.D. thesis; and the MARCO Gigascale Silicon Research Center's "Calibrating Achievable Design" thrust). Updates to a METRICS2.0 metrics dictionary were made by the UCSD CSE 249B seminar class in Fall 2018. We thank Roger Carpenter, Colin Holehouse, Siddhartha Nath, Tuck-Boon Chan, Jiajia Li, Mohamed Shalan and the Efabless team for their inputs toward defining a more complete and stable METRICS2.1 scope and naming.  Improvements to metrics naming, reporting and messaging, and extraction in The OpenROAD Project have been contributed by Abdelrahman Hosny, Vitor Bandeira, Matt Liberty, Mehdi Saligane, Wenbo Duan, Seungwon Kim, Indira Iyer, and numerous tool developers.
+
+### Acknowledgments
+
+METRICS2.1 has its roots in the original METRICS1.0 (DAC-2000 and ISQED-2001 papers; Dr. Stefanus Mantik's Ph.D. thesis;
+and the MARCO Gigascale Silicon Research Center's "Calibrating Achievable Design" thrust). 
+Updates to a METRICS2.0 metrics dictionary were made by the UCSD CSE 249B seminar class in Fall 2018. We thank Roger Carpenter, Colin Holehouse, Siddhartha Nath, Tuck-Boon Chan, Jiajia Li, Mohamed Shalan and the Efabless team for their inputs toward defining a more complete and stable METRICS2.1 scope and naming.  
+Improvements to metrics naming, reporting and messaging, and extraction in The OpenROAD Project have been contributed by Abdelrahman Hosny, Vitor Bandeira, Matt Liberty, Mehdi Saligane, Wenbo Duan, Seungwon Kim, Indira Iyer, and numerous tool developers.
 
 ## FAQs
 1. Q. Where can I find the version name of the tool to reproduce the experiments?  
