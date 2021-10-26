@@ -1,11 +1,11 @@
-# util_layer_adjust
+# core_util__
 ## Experiment Desciption
-It changes 'layer_adjust' and core utilization to see the effect of 'layer_adjust'.
+This experiment studies the relationship between the core utilization of floorplan and the placement density parameter of the RePlAce global placer
 Platform: asap7, sky130hd
-Designs: aes_cipher, ibex_core, jpeg_encoder
+Designs: ibex_core
 Core Utilization: 10% to 60%, step 1%.
-Layer Adjust: For M1 to Mtop, sweep 0.2 to 0.6, step 0.02.
-Total #runs = 6426
+Place Density delta (over Core Utilization): 0 to 90% in steps of 2%
+Total #runs = 2295 per platform for a total of 4580 
 
 ## metrics (.json) files 
 The metrics are collected into metrics/ directory. For each run, the metrics are collected separately as a json file.
