@@ -1,11 +1,11 @@
-# core_util__
+# core_util__place_density
 ## Experiment Desciption
 This experiment studies the relationship between the core utilization of floorplan and the placement density parameter of the RePlAce global placer
-Platform: asap7, sky130hd
-Designs: ibex_core
-Core Utilization: 10% to 60%, step 1%.
-Place Density delta (over Core Utilization): 0 to 90% in steps of 2%
-Total #runs = 2295 per platform for a total of 4580 
+- Platform: asap7, sky130hd
+- Designs: ibex_core
+- Core Utilization: 10% to 60%, step 1%.
+- Place Density delta (over Core Utilization): 0 to 90% in steps of 2%
+- Total #runs = 2295 per platform for a total of 4580 
 
 ## metrics (.json) files 
 The metrics are collected into metrics/ directory. For each run, the metrics are collected separately as a json file.
