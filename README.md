@@ -108,7 +108,7 @@ The sample json shows the metrics as a json record with individual metrics for e
 - A. B. Kahng and S. Mantik, "A System for Automatic Recording and Prediction of Design Quality Metrics," Proc. International Symposium on Quality in Electronic Design, March 2001, pp. 81-86.
 MARCO GSRC Metrics website: https://vlsicad.ucsd.edu/GSRC/metrics/
 - S. Hashemi , C.-T. Ho , A. B. Kahng , H.-Y. Liu , and S. Reda,   "METRICS 2.0: A  machine learning based optimization system for IC Design", Workshop on Open Source EDA Technology, November, 2018.
-- J. Jung, A. B. Kahng, S. Kim and R. Varadarajan, "METRICS2.1 and Flow Tuning in the IEEE CEDA Robust Design Flow and OpenROAD," Proc. ACM/IEEE International Conference on Computer-Aided Design, 2021, to appear.
+- J. Jung, A. B. Kahng, S. Kim and R. Varadarajan, "METRICS2.1 and Flow Tuning in the IEEE CEDA Robust Design Flow and OpenROAD," [(.pdf)](https://vlsicad.ucsd.edu/Publications/Conferences/388/c388.pdf), [(.pptx)](https://vlsicad.ucsd.edu/Publications/Conferences/388/c388.pptx), [(.mp4)](https://vlsicad.ucsd.edu/Publications/Conferences/388/c388.mp4), Proc. ACM/IEEE International Conference on Computer-Aided Design, 2021, to appear.
 
 
 ## Acknowledgments
