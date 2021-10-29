@@ -9,7 +9,7 @@ The naming convention for METRICS2.1 and a sample of the metrics file is shown [
 
 ## Repository Structure
 
-The repository contains the `experiments` folder at the top. Inside the experiments directory are sub directories contains the results from  specific experiments and has the following naming convention:
+The repository contains the `experiments` folder at the top. Inside the experiments directory are sub directories containing the results from  specific experiments and has the following naming convention:
 
 ```
 {technology node}__{design}__{the name of experiment}
