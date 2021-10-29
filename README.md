@@ -9,7 +9,7 @@ The naming convention for METRICS2.1 and a sample of the metrics file is shown [
 
 ## Repository Structure
 
-The repository contains the `experiments` folder in the top. Each sub directory contains the results from a specific experiment and has the following naming convention:
+The repository contains the `experiments` folder at the top. Inside the experiments directory are sub directories contains the results from  specific experiments and has the following naming convention:
 
 ```
 {technology node}__{design}__{the name of experiment}
@@ -17,26 +17,20 @@ The repository contains the `experiments` folder in the top. Each sub directory 
 
 The contents of each `experiment` sub-directory are:
 
-- all_config_files.tgz
-- metrics (.json) files
+- `configs` directory that contains the tar of all the config files
+- `metrics` directory that contain the tar of all the collected metrics for all runs in the METRICS2.1 format
 
-### all_config_files.tgz
-
-This configs directory contains the design config files used for each run.
+The configs directory contains the design config files used for each run.
 The design config files for each run consist of the following files:
 
 - `config-DoE-{variant name}.mk`
 - `fastroute-DoE-{variant name}.tcl` (if required)
 - `constraint-DoE-{variant name}.sdc` (if required)
 
-To reproduce the each run, user should set `config-DoE-{variant name}.mk` as an `DESIGN_CONFIG` variable for [Makefile](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts/blob/master/flow/Makefile) in OpenROAD tool.
+To reproduce each run, the user should set `config-DoE-{variant name}.mk` as a `DESIGN_CONFIG` variable for [Makefile](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts/blob/master/flow/Makefile) in OpenROAD tool.
 The above three files for each run must be located in the `{OpenROAD}/flow/designs/{platform}/{design}/ directory`.
-This contains a `data` directory that is further broken down to the individual design run directories that contain all the
 
-
-### metrics (.json) files
-
-The metrics are collected into metrics/ directory. For each run, the metrics are collected separately as a json file.
+The metrics are collected into metrics directory. For each run, the metrics are collected separately as a json file.
 The metrics json file name will be the following naming convention:
 - metrics-DoE-{variant name}.json
 
