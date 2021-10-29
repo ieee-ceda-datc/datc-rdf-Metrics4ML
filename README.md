@@ -51,7 +51,8 @@ A stage is pre-defined flow stage of the design flow and the current stages for 
 A snapshot can be any user defined stage or sub-stage with a unique name to capture the metrics at any point during the flow.
 For example, if a user is experimenting with two different optimization recipes, they can create two separate snapshots to capture the metrics for each recipe.
 
-![alt text](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML/blob/main/immages/image.jpg?raw=true)
+Metrics2.1_org_v2.png
+![alt text](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML/blob/main/immages/Metrics2.1_org_v2.png?raw=true)
 
 Inside each stage are the individual metrics.
 Metrics are further organized as (1) category, (2) name, (3) optional name modifier, and (4) optional classification modifiers, which are separated by a user specified delimiter string.
