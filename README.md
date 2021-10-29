@@ -45,7 +45,7 @@ For a detailed description of **metrics**, please see the following section: [Me
 
 ## Metrics Naming Convention
 
-METRICS2.1 is organized as a hierarchical JSON object.
+METRICS2.1 is organized as a hierarchical JSON object as shown in the figure below.
 The top level of the JSON object is the "stage" (or "snapshot").
 A stage is pre-defined flow stage of the design flow and the current stages for METRICS2.1 are `run`, `init`, `synth`, `floorplan`, `globalplace`, `placeopt`, `detailedplace`, `cts`, `globalroute`, `detailedroute` and `finish`.
 A snapshot can be any user defined stage or sub-stage with a unique name to capture the metrics at any point during the flow.
