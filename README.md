@@ -92,10 +92,10 @@ The sample JSON shows the metrics as a JSON record with individual metrics for e
 ## FAQs
 
 1. Where can I find the version name of the tool to reproduce the experiments?
-    - For the version and run date and git commit used in each experiment, please refer to  stage "run" and the metrics "flow__generate__date", "flow__openroad__version" and "flow__openroad__commit" in the JSON file
+    - For the version and run date and git commit used in each experiment, please refer to  stage "run" and the metrics "flow__generate__date", "flow__openroad__version" and "flow__openroad__commit" in the JSON file.
 
 2. Does OpenROAD tool guarantees the exact same results with the same configuration and input files?
-    - We believe that the current OpenROAD version does not have any "non-deterministic" behavior. With the same release version and same configuration and input files, we should see identical results.  However, since the underlying engines are constantly evolving, the metrics can and will change across new releases. The golden results for latest OpenROAD release is also uploaded to GitHub
+    - We believe that the current OpenROAD version does not have any "non-deterministic" behavior. With the same release version and same configuration and input files, we should see identical results.  However, since the underlying engines are constantly evolving, the metrics can and will change across new releases. The golden results for latest OpenROAD release is also uploaded to GitHub.
 
 
 ## References
