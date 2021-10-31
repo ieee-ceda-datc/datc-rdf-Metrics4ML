@@ -34,10 +34,10 @@ The metrics are collected into metrics directory. For each run, the metrics are 
 The metrics JSON file name will be the following naming convention:
 - metrics-DoE-{variant name}.json
 
-For a detailed description of **metrics**, please see the following section: [Metrics Naming Convention](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML#metrics-naming-convention)
+For a detailed description of **metrics**, please see the following section: [METRICS2.1 Naming Convention](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML#metrics-naming-convention)
 
 
-## Metrics Naming Convention
+## METRICS2.1 Naming Convention
 
 METRICS2.1 is organized as a hierarchical JSON object as shown in the figure below.
 The top level of the JSON object is the "stage" (or "snapshot").
@@ -111,5 +111,5 @@ MARCO GSRC Metrics website: https://vlsicad.ucsd.edu/GSRC/metrics/
 
 METRICS2.1 has its roots in the original METRICS1.0 (DAC-2000 and ISQED-2001 papers; Dr. Stefanus Mantik's Ph.D. thesis; and the MARCO Gigascale Silicon Research Center's "Calibrating Achievable Design" thrust).
 Updates to a METRICS2.0 metrics dictionary were made by the UCSD CSE 249B seminar class in Fall 2018. We thank Roger Carpenter, Colin Holehouse, Siddhartha Nath, Tuck-Boon Chan, Jiajia Li, Mohamed Shalan and the Efabless team for their inputs toward defining a more complete and stable METRICS2.1 scope and naming.
-Improvements to metrics naming, reporting and messaging, and extraction in The OpenROAD Project have been contributed by Abdelrahman Hosny, Vitor Bandeira, Matt Liberty, Mehdi Saligane, Wenbo Duan, Ravi Varadarajan, Seungwon Kim, Indira Iyer, and numerous tool developers.
+Improvements to METRICS2.1 naming, reporting and messaging, and extraction in The OpenROAD Project have been contributed by Abdelrahman Hosny, Vitor Bandeira, Matt Liberty, Mehdi Saligane, Wenbo Duan, Ravi Varadarajan, Seungwon Kim, Indira Iyer, and numerous tool developers.
 
