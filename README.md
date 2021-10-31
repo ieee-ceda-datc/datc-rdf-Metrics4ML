@@ -9,18 +9,18 @@ The naming convention for METRICS2.1 and a sample of the metrics file is shown [
 
 ## Repository Structure
 
-The repository contains the `experiments` folder at the top. Inside the experiments directory are sub directories containing the results from  specific experiments and has the following naming convention:
+The repository contains the `experiments` folder at the top. Inside the experiments directory are subdirectories containing the results from  specific experiments and has the following naming convention:
 
 ```
 {technology node}__{design}__{the name of experiment}
 ```
 
-The contents of each `experiment` sub-directory are:
+The contents of each `experiment` subdirectory are:
 
 - `configs` directory that contains the tar of all the config files
-- `metrics` directory that contain the tar of all the collected metrics for all runs in the METRICS2.1 format
+- `metrics` directory that contain the tar of all the collected METRICS2.1 files
 
-The configs directory contains the design config files used for each run.
+The `configs` directory contains the design config files used for each run.
 The design config files for each run consist of the following files:
 
 - `config-DoE-{variant name}.mk`
@@ -30,8 +30,8 @@ The design config files for each run consist of the following files:
 To reproduce each run, the user should set `config-DoE-{variant name}.mk` as a `DESIGN_CONFIG` variable for [Makefile](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts/blob/master/flow/Makefile) in OpenROAD tool.
 The above three files for each run must be located in the `{OpenROAD}/flow/designs/{platform}/{design}/ directory`.
 
-The metrics are collected into metrics directory. For each run, the metrics are collected separately as a JSON file.
-The metrics JSON file name will be the following naming convention:
+The METRICS2.1 files are collected into `metrics` directory. For each run, the METRICS2.1 files are collected separately as a JSON file.
+The METRICS2.1 JSON file name will be the following naming convention:
 - metrics-DoE-{variant name}.json
 
 For a detailed description of **metrics**, please see the following section: [METRICS2.1 Naming Convention](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML#metrics-naming-convention)
@@ -41,8 +41,8 @@ For a detailed description of **metrics**, please see the following section: [ME
 
 METRICS2.1 is organized as a hierarchical JSON object as shown in the figure below.
 The top level of the JSON object is the "stage" (or "snapshot").
-A stage is pre-defined flow stage of the design flow and the current stages for METRICS2.1 are `run`, `init`, `synth`, `floorplan`, `globalplace`, `placeopt`, `detailedplace`, `cts`, `globalroute`, `detailedroute` and `finish`.
-A snapshot can be any user defined stage or sub-stage with a unique name to capture the metrics at any point during the flow.
+A stage is predefined flow stage of the design flow and the current stages for METRICS2.1 are `run`, `init`, `synth`, `floorplan`, `globalplace`, `placeopt`, `detailedplace`, `cts`, `globalroute`, `detailedroute` and `finish`.
+A snapshot can be any user defined stage or substage with a unique name to capture the metrics at any point during the flow.
 For example, if a user is experimenting with two different optimization recipes, they can create two separate snapshots to capture the metrics for each recipe.
 
 ![alt text](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML/blob/main/images/Metrics2.1_org_v2.png?raw=true)
@@ -74,8 +74,7 @@ METRICS2.1 also supports classification modifiers to provide more specific infor
 Classification modifiers are optional and can either be type classification modifiers or structure classification modifiers.
 Type classification modifiers further subdivide the metric into specific sub-types to show a distribution of the metric.
 An example would be to show the breakdown of the number of instances in the design into stdcells and macros and further break down the number of stdcells into sequential or combinational.
-Structure classification modifiers,  on the other hand, provide information about a specific view of the design. An example would be to provide the information for a specific analysis_view or a specific clock domain for a timing
-metrics
+Structure classification modifiers,  on the other hand, provide information about a specific view of the design. An example would be to provide the information for a specific analysis_view or a specific clock domain for timing metrics.
 
 Some sample metrics are shown below.
 
@@ -85,7 +84,7 @@ Some sample metrics are shown below.
 * `route__wirelength__estimated`:  The estimated wirelength at that specific stage.
 * `power__switching__total`: The total switching power consumption.
 
-The METRICS2.1 format is shown in [METRICS2.1 format](https://docs.google.com/spreadsheets/d/e/2PACX-1vQ1d21tUGgi0W_kE-RiDww1OPUmjsLbabulHcUq7mXdOAQcWFmoX34N8uVcMHkhCjUrm04Wj_bgBC-Z/pubhtml) and a sample metrics file generated form the OpenROAD flow for the open-source core `ibex` on the open-source platform sky130-hd is show in [metrics_sample.json](./metrics_sample.json).
+The METRICS2.1 format is shown in [METRICS2.1 format](https://docs.google.com/spreadsheets/d/e/2PACX-1vQ1d21tUGgi0W_kE-RiDww1OPUmjsLbabulHcUq7mXdOAQcWFmoX34N8uVcMHkhCjUrm04Wj_bgBC-Z/pubhtml) and a sample metrics file generated from the OpenROAD flow for the open-source core `ibex` on the open-source platform sky130-hd is show in [metrics_sample.json](./metrics_sample.json).
 The sample JSON shows the metrics as a JSON record with individual metrics for each stage of the design. Also, even though only a subset of metrics are shown in each stage, the format allows for any metric to be shown at any stage.
 
 
@@ -94,7 +93,7 @@ The sample JSON shows the metrics as a JSON record with individual metrics for e
 1. Where can I find the version name of the tool to reproduce the experiments?
     - For the version and run date and git commit used in each experiment, please refer to  stage "run" and the metrics "flow__generate__date", "flow__openroad__version" and "flow__openroad__commit" in the JSON file.
 
-2. Does OpenROAD tool guarantees the exact same results with the same configuration and input files?
+2. Does OpenROAD tool guarantee the exact same results with the same configuration and input files?
     - We believe that the current OpenROAD version does not have any "non-deterministic" behavior. With the same release version and same configuration and input files, we should see identical results.  However, since the underlying engines are constantly evolving, the metrics can and will change across new releases. The golden results for latest OpenROAD release is also uploaded to GitHub.
 
 
