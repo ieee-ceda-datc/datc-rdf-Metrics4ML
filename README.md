@@ -30,8 +30,8 @@ The design config files for each run consist of the following files:
 To reproduce each run, the user should set `config-DoE-{variant name}.mk` as a `DESIGN_CONFIG` variable for [Makefile](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts/blob/master/flow/Makefile) in OpenROAD tool.
 The above three files for each run must be located in the `{OpenROAD}/flow/designs/{platform}/{design}/ directory`.
 
-The metrics are collected into metrics directory. For each run, the metrics are collected separately as a json file.
-The metrics json file name will be the following naming convention:
+The metrics are collected into metrics directory. For each run, the metrics are collected separately as a JSON file.
+The metrics JSON file name will be the following naming convention:
 - metrics-DoE-{variant name}.json
 
 For a detailed description of **metrics**, please see the following section: [Metrics Naming Convention](https://github.com/ieee-ceda-datc/datc-rdf-Metrics4ML#metrics-naming-convention)
@@ -86,13 +86,13 @@ Some sample metrics are shown below.
 * `power__switching__total`: The total switching power consumption.
 
 The METRICS2.1 format is shown in [METRICS2.1 format](https://docs.google.com/spreadsheets/d/e/2PACX-1vQ1d21tUGgi0W_kE-RiDww1OPUmjsLbabulHcUq7mXdOAQcWFmoX34N8uVcMHkhCjUrm04Wj_bgBC-Z/pubhtml) and a sample metrics file generated form the OpenROAD flow for the open-source core `ibex` on the open-source platform sky130-hd is show in [metrics_sample.json](./metrics_sample.json).
-The sample json shows the metrics as a json record with individual metrics for each stage of the design. Also, even though only a subset of metrics are shown in each stage, the format allows for any metric to be shown at any stage.
+The sample JSON shows the metrics as a JSON record with individual metrics for each stage of the design. Also, even though only a subset of metrics are shown in each stage, the format allows for any metric to be shown at any stage.
 
 
 ## FAQs
 
 1. Where can I find the version name of the tool to reproduce the experiments?
-    - For the version and run date and git commit used in each experiment, please refer to  stage "run" and the metrics "flow__generate__date", "flow__openroad__version" and "flow__openroad__commit" in the json file
+    - For the version and run date and git commit used in each experiment, please refer to  stage "run" and the metrics "flow__generate__date", "flow__openroad__version" and "flow__openroad__commit" in the JSON file
 
 2. Does OpenROAD tool guarantees the exact same results with the same configuration and input files?
     - We believe that the current OpenROAD version does not have any "non-deterministic" behavior. With the same release version and same configuration and input files, we should see identical results.  However, since the underlying engines are constantly evolving, the metrics can and will change across new releases. The golden results for latest OpenROAD release is also uploaded to github
