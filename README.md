@@ -84,7 +84,7 @@ Some sample metrics are shown below.
 * `route__wirelength__estimated`:  The estimated wirelength at that specific stage.
 * `power__switching__total`: The total switching power consumption.
 
-The METRICS2.1 format is shown in [METRICS2.1 format](https://docs.google.com/spreadsheets/d/e/2PACX-1vQ1d21tUGgi0W_kE-RiDww1OPUmjsLbabulHcUq7mXdOAQcWFmoX34N8uVcMHkhCjUrm04Wj_bgBC-Z/pubhtml) and a sample metrics file generated from the OpenROAD flow for the open-source core `ibex` on the open-source SKY130HD platform is shown in [metrics_sample.json](./metrics_sample.json).
+The METRICS2.1 format is shown in [METRICS2.1 format](https://docs.google.com/spreadsheets/d/e/2PACX-1vQ1d21tUGgi0W_kE-RiDww1OPUmjsLbabulHcUq7mXdOAQcWFmoX34N8uVcMHkhCjUrm04Wj_bgBC-Z/pubhtml) and a sample metrics file generated from the OpenROAD flow for the open-source core `ibex` on the open-source ASAP7 platform is shown in [metrics_sample.json](./metrics_sample.json).
 The sample JSON shows the metrics as a JSON record with individual metrics for each stage of the design. Also, even though only a subset of metrics are shown in each stage, the format allows for any metric to be shown at any stage.
 
 
