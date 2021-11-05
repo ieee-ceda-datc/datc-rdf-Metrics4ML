@@ -1,4 +1,5 @@
-# Sample
+# Sample of METRICS2.1  metrics collected from OpenROAD
+
 * `flow__openroad__commit`: OpenROAD commit for the run.
 * `flow__scripts__commit`: OpenROAD flow scripts commit for the run.
 * `design__instance__stdcell__count`:  The the number of std cell instances in the design at that specific stage.
