@@ -78,7 +78,7 @@ Structure classification modifiers,  on the other hand, provide information abou
 
 Some sample metrics are shown below.
 
-* `design__instance__stdcell__count`:  The the number of std cell instances in the design at that specific stage.
+* `design__instance__count__stdcell`:  The the number of std cell instances in the design at that specific stage.
 * `timing__setup__wns`: The worst negative slack in the design.
 * `timing__setup__wns__clock:<clock_name>:path_group:<path_group_name>`:  The worst negative slack in the design for a specific clock and a specific path group.
 * `route__wirelength__estimated`:  The estimated wirelength at that specific stage.
