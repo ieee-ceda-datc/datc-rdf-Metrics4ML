@@ -1,5 +1,5 @@
 # util_layer_adjust
-## Experiment Desciption
+## Experiment Description
 It changes 'layer_adjust' and core utilization to see the effect of 'layer_adjust'.
 Platform: asap7, sky130hd
 Designs: aes_cipher, ibex_core, jpeg_encoder
