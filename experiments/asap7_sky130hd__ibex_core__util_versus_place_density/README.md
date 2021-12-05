@@ -1,5 +1,5 @@
 # core_util__place_density
-## Experiment Desciption
+## Experiment Description
 This experiment studies the relationship between the core utilization of floorplan and the placement density parameter of the RePlAce global placer
 - Platform: asap7, sky130hd
 - Designs: ibex_core
