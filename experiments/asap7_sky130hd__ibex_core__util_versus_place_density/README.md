@@ -7,7 +7,7 @@ This experiment studies the relationship between the core utilization of floorpl
 - Place Density delta (over Core Utilization): 0 to 90% in steps of 2%
 - Total #runs = 2295 per platform for a total of 4580 
 
-This experiment was run with an OpenROAD commit that used an older sepcification of METRICS2.1. The metrics name changes
+This experiment was run with an OpenROAD commit that used an older specification of METRICS2.1. The metrics name changes
 to the latest version is shown in [METRICS2.1_V2 changes](../../METRICS2.1_V2_changes.md).
 
 ## metrics (.json) files 
