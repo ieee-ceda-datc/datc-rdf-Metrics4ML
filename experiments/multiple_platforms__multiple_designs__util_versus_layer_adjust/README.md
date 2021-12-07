@@ -1,6 +1,6 @@
 # util_layer_adjust
 ## Experiment Description
-It changes 'layer_adjust' and core utilization to see the effect of 'layer_adjust'.
+This experiment changes the 'layer_adjust' parameters for global route and the core utilization of the floorplan to see its effect on the detailed router and the routed wirelength.
 * Platform: asap7, sky130hd
 * Designs: aes_cipher, ibex_core, jpeg_encoder
 * Core Utilization: 10% to 60%, step 1%.
