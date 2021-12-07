@@ -1,5 +1,7 @@
 # Sample run
 In this sample run, files are not compressed by tarball to show the file structure.
+This experiment was run with an OpenROAD commit that used an older sepcification of METRICS2.1. The metrics name changes
+to the latest version is shown in [METRICS2.1_V2 changes](../../METRICS2.1_V2_changes.md).
 
 ## metrics (.json) files 
 The metrics are collected into metrics/ directory. For each run, the metrics are collected separately as a json file.
