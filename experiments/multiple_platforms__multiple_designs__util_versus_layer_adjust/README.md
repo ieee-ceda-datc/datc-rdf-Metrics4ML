@@ -1,11 +1,14 @@
 # util_layer_adjust
 ## Experiment Description
 It changes 'layer_adjust' and core utilization to see the effect of 'layer_adjust'.
-Platform: asap7, sky130hd
-Designs: aes_cipher, ibex_core, jpeg_encoder
-Core Utilization: 10% to 60%, step 1%.
-Layer Adjust: For M1 to Mtop, sweep 0.2 to 0.6, step 0.02.
-Total #runs = 6426
+* Platform: asap7, sky130hd
+* Designs: aes_cipher, ibex_core, jpeg_encoder
+* Core Utilization: 10% to 60%, step 1%.
+* Layer Adjust: For M1 to Mtop, sweep 0.2 to 0.6, step 0.02.
+* Total #runs = 6426
+
+This experiment was run with an OpenROAD commit that used an older sepcification of METRICS2.1. The metrics name changes
+to the latest version is shown in [METRICS2.1_V2 changes](../../METRICS2.1_V2_changes.md).
 
 ## metrics (.json) files 
 The metrics are collected into metrics/ directory. For each run, the metrics are collected separately as a json file.
