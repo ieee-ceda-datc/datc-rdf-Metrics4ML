@@ -21,8 +21,9 @@ The design config files for each run consist of the following files:
 To reproduce the each run, user should set 'config-DoE-{variant name}.mk' as an 'DESIGN_CONFIG' variable for [Makefile](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts/blob/master/flow/Makefile) in OpenROAD tool.
 The above three files for each run must be located in the {OpenROAD}/flow/designs/{platform}/{design}/ directory.
 
-## Jupyter Notebook
-[A sample Jupyter Notebook] to visualize the data and build simple models to predict on unseen data is shown.
 
-[The output from running the Jupyter notebook] is also shown without the Python code.
+## Jupyter Notebook
+[A sample Jupyter Notebook](https://nbviewer.jupyter.org/github/ieee-ceda-datc/datc-rdf-Metrics4ML/blob/main/experiments/asap7_sky130hd__ibex_core__util_versus_place_density_V2.1.2/METRICS2.1-V2-exp5.ipynb) to visualize the data and build simple models to predict on unseen data is shown.
+
+[The output from running the Jupyter notebook](https://nbviewer.jupyter.org/github/ieee-ceda-datc/datc-rdf-Metrics4ML/blob/main/experiments/asap7_sky130hd__ibex_core__util_versus_place_density_V2.1.2/METRICS2.1-V2-exp5.html) is also shown without the Python code.
 
