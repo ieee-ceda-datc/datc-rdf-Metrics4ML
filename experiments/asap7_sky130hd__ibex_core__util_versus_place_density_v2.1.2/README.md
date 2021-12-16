@@ -23,7 +23,7 @@ The above three files for each run must be located in the {OpenROAD}/flow/design
 
 
 ## Jupyter Notebook
-[A sample Jupyter Notebook](https://nbviewer.jupyter.org/github/ieee-ceda-datc/datc-rdf-Metrics4ML/blob/main/experiments/asap7_sky130hd__ibex_core__util_versus_place_density_V2.1.2/METRICS2.1-V2-exp5.ipynb) to visualize the data and build simple models to predict on unseen data is shown.
+[A sample Jupyter Notebook](https://nbviewer.jupyter.org/github/ieee-ceda-datc/datc-rdf-Metrics4ML/blob/main/experiments/asap7_sky130hd__ibex_core__util_versus_place_density_v2.1.2/METRICS2.1-V2-exp5.ipynb) to visualize the data and build simple models to predict on unseen data is shown.
 
-[The output from running the Jupyter notebook](https://nbviewer.jupyter.org/github/ieee-ceda-datc/datc-rdf-Metrics4ML/blob/main/experiments/asap7_sky130hd__ibex_core__util_versus_place_density_V2.1.2/METRICS2.1-V2-exp5.html) is also shown without the Python code.
+[The output from running the Jupyter notebook](https://nbviewer.jupyter.org/github/ieee-ceda-datc/datc-rdf-Metrics4ML/blob/main/experiments/asap7_sky130hd__ibex_core__util_versus_place_density_v2.1.2/METRICS2.1-V2-exp5.html) is also shown without the Python code.
 
